@@ -78,6 +78,11 @@ Performed by the **maker** (Chapter 0, 0.6.1).
 ### 1.2.2 Create and publish a Foundry test agent
 
 Performed by the **developer** (Chapter 0, 0.6.1). Publishing requires the **Foundry Project Manager** role on the Foundry resource scope.
+If you haven't used foundry before review: 
+
+i. An Azure Subscription Owner needs to [`Create your Foundry Resource`](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?context=%2Fazure%2Ffoundry%2Fcontext%2Fcontext&tabs=portal&pivots=azportal)
+ii. Then [`Assign RBAC`](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?tabs=owner%2Cfoundry#manage-role-assignments) - Foundry Owner is needed to perform the next step
+iii. [`Deploy Base Resources`](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources?tabs=portal#prerequisites)
 
 1. Follow [`samples/foundry/README.md`](samples/foundry/README.md) to create the prompt agent `poc-foundry-trail-guide`.
 2. Publish the agent as an Agent Application, as described in [Publish your agent as an Agent Application](https://learn.microsoft.com/azure/foundry/agents/how-to/publish-agent).
