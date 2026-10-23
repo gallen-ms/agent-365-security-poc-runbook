@@ -17,6 +17,7 @@ Grant the read-only role first. Grant setup roles only to the people who make ch
 
 | Task | Least-privilege role | Section |
 |---|---|---|
+| Create and Configure a Foundry Resource | Azure Owner account from Chapter 0 (0.6.1) | 1.2.2 |
 | Create the Copilot Studio and Foundry test agents | **Maker** or **developer** account from Chapter 0 (0.6.1) | 1.2.1, 1.2.2 |
 | Publish a Foundry agent as an Agent Application | **Foundry Project Manager** on the Foundry resource scope | 1.2.2 |
 | View the Agent Registry, Overview, filters, risk counts and export | **AI Reader** or **Global Reader** | 1.3 |
@@ -78,11 +79,12 @@ Performed by the **maker** (Chapter 0, 0.6.1).
 ### 1.2.2 Create and publish a Foundry test agent
 
 Performed by the **developer** (Chapter 0, 0.6.1). Publishing requires the **Foundry Project Manager** role on the Foundry resource scope.
-If you haven't used foundry before review: 
 
-i. An Azure Subscription Owner needs to [`Create your Foundry Resource`](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?context=%2Fazure%2Ffoundry%2Fcontext%2Fcontext&tabs=portal&pivots=azportal)
-ii. Then [`Assign RBAC`](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?tabs=owner%2Cfoundry#manage-role-assignments) - Foundry Owner is needed to perform the next step
-iii. [`Deploy Base Resources`](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources?tabs=portal#prerequisites)
+
+If you haven't any existing Foundry resources, complete the following. 
+1. An Azure Subscription Owner needs to [`Create your Foundry Resource`](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?context=%2Fazure%2Ffoundry%2Fcontext%2Fcontext&tabs=portal&pivots=azportal)
+2. Then [`Assign RBAC`](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?tabs=owner%2Cfoundry#manage-role-assignments) - Foundry Owner is needed to perform the next step
+3. [`Deploy Base Resources`](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources?tabs=portal#prerequisites)
 
 1. Follow [`samples/foundry/README.md`](samples/foundry/README.md) to create the prompt agent `poc-foundry-trail-guide`.
 2. Publish the agent as an Agent Application, as described in [Publish your agent as an Agent Application](https://learn.microsoft.com/azure/foundry/agents/how-to/publish-agent).
